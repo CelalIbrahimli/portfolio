@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b1020;
+  color: #f5f7ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.hero {
+  padding: 28px 8%;
+  background:
+    radial-gradient(circle at top left, rgba(79, 124, 255, 0.25), transparent 30%),
+    radial-gradient(circle at top right, rgba(0, 224, 206, 0.15), transparent 30%),
+    linear-gradient(135deg, #0b1020, #111a33);
+  border-bottom: 1px solid #1a2446;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 72px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.navLinks a {
+  color: #c9d4ff;
+  transition: 0.25s ease;
+}
+
+.navLinks a:hover {
+  color: #ffffff;
+}
+
+.heroContent {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 28px;
+  align-items: center;
+  padding-bottom: 72px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 14px;
+  background: rgba(79, 124, 255, 0.12);
+  border: 1px solid rgba(79, 124, 255, 0.35);
+  border-radius: 999px;
+  color: #9dbbff;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.heroText h1 {
+  font-size: 56px;
+  line-height: 1.08;
+  margin-bottom: 20px;
+  max-width: 760px;
+}
+
+.heroText h1 span {
+  color: #7aa2ff;
+}
+
+.heroText p {
+  color: #d7def8;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 720px;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.btn.primary {
+  background: #4f7cff;
+  color: white;
+  padding: 13px 22px;
+}
+
+.btn.primary:hover {
+  transform: translateY(-2px);
+  background: #3f6ef8;
+}
+
+.btn.secondary {
+  border: 1px solid #3550a3;
+  color: #dce6ff;
+  padding: 13px 22px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.btn.secondary:hover {
+  transform: translateY(-2px);
+  background: rgba(79, 124, 255, 0.08);
+}
+
+.btn.small {
+  padding: 10px 16px;
+  font-size: 14px;
+}
+
+.heroCard {
+  background: rgba(17, 26, 51, 0.95);
+  border: 1px solid #24335f;
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+}
+
+.heroCard h3 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.heroCard ul {
+  list-style: none;
+}
+
+.heroCard li {
+  color: #d9e3ff;
+  padding: 12px 0;
+  border-bottom: 1px solid #1f2a4c;
+}
+
+.heroCard li:last-child {
+  border-bottom: none;
+}
+
+.container {
+  width: min(1150px, 92%);
+  margin: 0 auto;
+}
+
+.section {
+  padding: 78px 0;
+}
+
+.section h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.sectionText {
+  color: #d4dcfa;
+  font-size: 17px;
+  line-height: 1.9;
+  max-width: 860px;
+}
+
+.stackGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.stackItem {
+  padding: 11px 16px;
+  border-radius: 999px;
+  background: #121a32;
+  border: 1px solid #24335f;
+  color: #ebf1ff;
+  font-size: 15px;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+  margin-top: 20px;
+}
+
+.projectCard {
+  background: #121a32;
+  border: 1px solid #24335f;
+  border-radius: 20px;
+  padding: 24px;
+  transition: 0.25s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  border-color: #3550a3;
+}
+
+.projectCard h3 {
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.projectCard p {
+  color: #d7def8;
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.cardButtons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.contactCard {
+  background: #121a32;
+  border: 1px solid #24335f;
+  padding: 18px;
+  border-radius: 16px;
+  color: #eef3ff;
+  text-align: center;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.contactCard:hover {
+  transform: translateY(-4px);
+  border-color: #4f7cff;
+  background: #152041;
+}
+
+.footer {
+  border-top: 1px solid #182344;
+  padding: 26px 8%;
+  color: #aab6dc;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .heroContent {
+    grid-template-columns: 1fr;
+  }
+
+  .heroText h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 24px 5%;
+  }
+
+  .footer {
+    padding: 22px 5%;
+  }
+
+  .heroText h1 {
+    font-size: 34px;
+  }
+
+  .section h2 {
+    font-size: 28px;
+  }
+
+  .heroText p,
+  .sectionText,
+  .projectCard p {
+    font-size: 16px;
+  }
+}
